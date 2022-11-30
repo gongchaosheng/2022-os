@@ -15,30 +15,30 @@ print(b)
 ```
 结果为`123ab`
 + **切片若省略了参数。start和end都没有默认参数，只取决于step的方向**  
++ **省略了end，不用管end了，step是正数所以向右切片，结果为'123abcdef'**
 ```
 s = '123abcdef'
 b = s[0::1]
 print(b)
 ```
-**省略了end，不用管end了，step是正数所以向右切片，结果为'123abcdef'**
++ **省略了end，不用管end了，step是负数所以向左切片，结果为'1'**
 ```
 s = '123abcdef'
 b = s[0::-1]
 print(b)
 ```
-**省略了end，不用管end了，step是负数所以向左切片，结果为'1'**
++ **省略了start和end，不用管他俩了，step是负数所以从末尾向左切片，结果为'fedcba321'**
 ```
 s = '123abcdef'
 b = s[::-1]
 print(b)
 ```
-**省略了start和end，不用管他俩了，step是负数所以从末尾向左切片，结果为'fedcba321'**
++ **省略了start和end，不用管他俩了，step是正数数所以从开始向有切片，结果为'123abcdef'**
 ```
 s = '123abcdef'
 b = s[::-1]
 print(b)
 ```
-**省略了start和end，不用管他俩了，step是正数数所以从开始向有切片，结果为'123abcdef'**
 
 # 那么接下来看一下题目吧 
 ```s = '123abcdef'```
